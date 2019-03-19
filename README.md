@@ -1,2 +1,7 @@
 # twitch-API-practice
-串接 twitch API 的練習
+
+XMLHttpRequest 串接 twitch API
+
+- JavaScript
+- CSS
+- HTML
