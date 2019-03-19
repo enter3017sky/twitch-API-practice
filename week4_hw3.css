@@ -6,7 +6,6 @@ body {
     margin: 0px;
     background: url(https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg) no-repeat center;
     background-attachment: fixed;
-    /* background-position: bottom; */
     background-size: cover;
 }
 .container {
@@ -28,15 +27,16 @@ body {
     color:white;
     z-index: 1;
 }
+
 .footer {
     color: aliceblue;
     font-family: cursive;
     text-align: center;
-    margin: 30px 0;
+    margin: 4rem 0 1rem;
 }
+
 .bar__brand {
     display: flex;
-    /* align-items: center; */
 }
 .bar__left {
     padding-left: 15px;
@@ -95,10 +95,6 @@ li + li {
 }
 .col {
     width: 250px;
-    /* height: 135px; */
-    /* max-width:28%;
-    max-height: 20%; */
-    /* border: 2px solid #5995DA; */
     border: 4px solid rgba(120, 120, 120, 0.3);
     padding: 2px;
     transition: all 0.2s ease-in;
@@ -108,10 +104,7 @@ li + li {
     cursor: pointer;
     filter: brightness(1.2);
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
-    /* border: 4px solid rgba(200, 200, 200, 0.7); */
     background: rgba(20, 20, 20, 0.9);
-
-
     position: relative;
     transform: scale(1.1);
     opacity: 1;
@@ -121,14 +114,30 @@ li + li {
     z-index: 1;
 }
 .preview {
-    /* border: 1px solid yellow; */
-    /* width: 249px;
-    height: 156px; */
-    /* margin-left: -3px; */
+    width: 100%;
+    height: 135px;
     display: flex;
     justify-content: center;
     position: relative;
 }
+
+.preview img {
+    max-width: 240px;
+    max-height: 135px;
+    opacity: 0;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('./placeholder.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 135px;
+ }
 
 .viewers { /* 觀看人數 */
     background: rgba(50, 50, 50, 0.5);
@@ -144,10 +153,7 @@ li + li {
     justify-content: flex-end;
     padding-right: 5px;
 }
-.preview img {
-    max-width: 240px;
-    max-height: 135px;
-}
+
 .bottom {
     display: flex;
     height: 70px;
@@ -162,7 +168,6 @@ li + li {
     opacity: 0.7;
 }
 .bottom__avatar {
-    /* border: 1px solid green; */
     width: 70px;
     height: 70px;
 }
